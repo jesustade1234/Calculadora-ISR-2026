@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora ISR 2026</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- BARRA SUPERIOR SOLO CON LOGO -->
+
+<nav class="navbar">
+    <div class="logo-area">
+        <img src="logo.png" alt="SAT">
+        <h2>Calculadora ISR 2026</h2>
+    </div>
+</nav>
+
+<!-- ENCABEZADO -->
+
+<header class="hero">
+
+    <h1>Calcula tu ISR en segundos</h1>
+
+    
+
+</header>
+
+<!-- CALCULADORA -->
+
+<section class="contenedor">
+
+    <div class="calculadora">
+
+        <h2>Calculadora ISR</h2>
+
+        <label for="periodo">Periodicidad</label>
+
+        <select id="periodo">
+            <option value="mensual">Mensual</option>
+            <option value="quincenal">Quincenal</option>
+        </select>
+
+        <label for="sueldo">Sueldo Bruto</label>
+
+        <input
+            type="number"
+            id="sueldo"
+            placeholder="Ingrese el sueldo bruto">
+
+        <button onclick="calcular()">
+            Calcular ISR
+        </button>
+
+    </div>
+
+</section>
+
+<!-- RESULTADOS -->
+
+<section class="resultados">
+
+    <div class="card">
+        <h3>ISR</h3>
+        <span id="isr">$0.00</span>
+    </div>
+
+    <div class="card">
+        <h3>Subsidio</h3>
+        <span id="subsidio">$0.00</span>
+    </div>
+
+    <div class="card">
+        <h3>Sueldo Neto</h3>
+        <span id="neto">$0.00</span>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+    Creado por: Cristopher Ruiz y Jesus Padilla 
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
